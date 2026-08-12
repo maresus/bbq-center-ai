@@ -5,9 +5,10 @@
     apiUrl: 'https://bbq-center-ai.up.railway.app/chat',
     inquiryUrl: 'https://bbq-center-ai.up.railway.app/chat/inquiry',
     logoUrl: 'https://bbq-center-ai.up.railway.app/static/logo.png',
-    brandColor: '#1c1c1c',
-    brandColorHover: '#333333',
-    accentColor: '#e8420a',
+    brandColor: '#c8251a',
+    brandColorHover: '#a01d15',
+    accentColor: '#c8251a',
+    headerBgUrl: 'https://bbq-center-ai.up.railway.app/static/steak.png',
     title: 'BBQ Center Ptuj',
     subtitle: 'Weber pooblaščeni prodajalec',
     placeholder: 'Vprašajte o žarih, noži, dostavi...',
@@ -200,7 +201,7 @@
     }
 
     #kv-widget-header {
-      background: linear-gradient(135deg, #1c1c1c 0%, #333333 100%);
+      background: linear-gradient(rgba(10,10,10,0.52), rgba(10,10,10,0.68)), url('${CONFIG.headerBgUrl}') center/cover no-repeat;
       color: #ffffff;
       padding: 16px 20px;
       display: flex;
