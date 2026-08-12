@@ -2,13 +2,13 @@
   'use strict';
 
   const CONFIG = {
-    apiUrl: 'https://bbq-center-ai.up.railway.app/chat',
-    inquiryUrl: 'https://bbq-center-ai.up.railway.app/chat/inquiry',
-    logoUrl: 'https://bbq-center-ai.up.railway.app/static/logo.png',
+    apiUrl: 'https://bbq-center-ai-production.up.railway.app/chat',
+    inquiryUrl: 'https://bbq-center-ai-production.up.railway.app/chat/inquiry',
+    logoUrl: 'https://bbq-center-ai-production.up.railway.app/static/logo.png',
     brandColor: '#c8251a',
     brandColorHover: '#a01d15',
     accentColor: '#c8251a',
-    headerBgUrl: 'https://bbq-center-ai.up.railway.app/static/steak.jpg',
+    headerBgUrl: 'https://bbq-center-ai-production.up.railway.app/static/steak.jpg',
     title: 'BBQ Center Ptuj',
     subtitle: 'Weber pooblaščeni prodajalec',
     placeholder: 'Vprašajte o žarih, noži, dostavi...',
