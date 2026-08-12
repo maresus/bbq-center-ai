@@ -8,7 +8,7 @@
     brandColor: '#c8251a',
     brandColorHover: '#a01d15',
     accentColor: '#c8251a',
-    headerBgUrl: 'https://bbq-center-ai.up.railway.app/static/steak.png',
+    headerBgUrl: 'https://bbq-center-ai.up.railway.app/static/steak.jpg',
     title: 'BBQ Center Ptuj',
     subtitle: 'Weber pooblaščeni prodajalec',
     placeholder: 'Vprašajte o žarih, noži, dostavi...',
