@@ -759,7 +759,7 @@
     const bubble = document.createElement('button');
     bubble.id = 'kv-widget-bubble';
     bubble.innerHTML = CONFIG.logoUrl
-      ? `<img src="${CONFIG.logoUrl}" alt="BBQ Center" style="width:44px;height:44px;object-fit:contain;border-radius:8px;">`
+      ? `<img src="${CONFIG.logoUrl}" alt="BBQ Center" style="width:40px;height:40px;object-fit:contain;border-radius:8px;background:white;padding:3px;">`
       : icons.chat;
     bubble.onclick = function(e) {
       e.stopPropagation();
