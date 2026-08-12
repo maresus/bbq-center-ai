@@ -5,37 +5,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BBQ Center Ptuj — AI asistent</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; height: 100%; font-family: system-ui, sans-serif; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
     body {
       min-height: 100vh;
       background:
-        linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.35) 100%),
-        url('/static/bg.jpg') center center / cover no-repeat;
-      background-attachment: fixed;
-      padding: 60px 48px;
+        linear-gradient(to bottom, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.72) 100%),
+        url('/static/steak.jpg') center center / cover no-repeat fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 8vw;
     }
-    .page-content { max-width: 580px; }
-    .logo-header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
-    .logo-header img { width: 60px; height: 60px; border-radius: 10px; }
-    h1 { color: #fff; font-size: 30px; font-weight: 700; margin: 0 0 4px; text-shadow: 0 2px 8px rgba(0,0,0,0.4); }
-    .tagline { color: #e8420a; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin: 0; }
-    .desc { color: rgba(255,255,255,0.95); font-size: 17px; margin: 0 0 16px; line-height: 1.55; text-shadow: 0 1px 4px rgba(0,0,0,0.5); }
-    .badge { display: inline-block; background: rgba(232,66,10,0.85); color: #fff; font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 20px; backdrop-filter: blur(4px); }
+
+    .hero {
+      max-width: 600px;
+    }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+
+    .logo-row img {
+      width: 68px;
+      height: 68px;
+      border-radius: 12px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: clamp(36px, 5vw, 58px);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+
+    h1 span {
+      color: #c8251a;
+    }
+
+    .sub {
+      color: rgba(255,255,255,0.82);
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 100px;
+      letter-spacing: 0.2px;
+    }
+
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #c8251a;
+      flex-shrink: 0;
+    }
+
+    .cta-hint {
+      margin-top: 52px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,0.5);
+      font-size: 13px;
+    }
+
+    .cta-arrow {
+      font-size: 22px;
+      animation: bounce 1.8s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(6px); }
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 40px 24px; align-items: flex-start; justify-content: flex-end; padding-bottom: 120px; }
+      h1 { font-size: 32px; }
+      .sub { font-size: 15px; }
+    }
   </style>
 </head>
 <body>
-  <div class="page-content">
-    <div class="logo-header">
+  <div class="hero">
+    <div class="logo-row">
       <img src="/static/logo.png" alt="BBQ Center" onerror="this.style.display='none'">
-      <div>
-        <h1>BBQ Center Ptuj</h1>
-        <p class="tagline">Weber pooblaščeni prodajalec</p>
-      </div>
+      <span class="brand-name">BBQ Center Ptuj</span>
     </div>
-    <p class="desc">Weber žari, Victorinox in Wüsthof noži, BBQ pribor in Weber Academy tečaji — vse za pravega BBQ mojstra.</p>
-    <span class="badge">Weber pooblaščeni · Brezplačna dostava · Ptuj</span>
+
+    <h1>Vaš<br>osebni <span>BBQ</span><br>svetovalec.</h1>
+
+    <p class="sub">Vprašajte o Weber žarih, noži, opremi ali Weber Academy tečajih. AI asistent odgovori takoj — vsak dan, brez čakanja.</p>
+
+    <div class="badges">
+      <span class="badge"><span class="badge-dot"></span>Weber pooblaščeni prodajalec</span>
+      <span class="badge"><span class="badge-dot"></span>Brezplačna dostava po Sloveniji</span>
+      <span class="badge"><span class="badge-dot"></span>Ptuj</span>
+    </div>
+
+    <div class="cta-hint">
+      <span class="cta-arrow">→</span>
+      <span>Pogovorite se z AI asistentom spodaj desno</span>
+    </div>
   </div>
-  <script src="/static/widget.js?v=1"></script>
+
+  <script src="/static/widget.js?v=2"></script>
 </body>
 </html>
