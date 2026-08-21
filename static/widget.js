@@ -12,9 +12,7 @@
     title: 'BBQ Center Ptuj',
     subtitle: 'Weber pooblaščeni prodajalec',
     placeholder: 'Vprašajte o žarih, noži, dostavi...',
-    welcomeMessage: 'Pozdravljeni! Sem AI pomočnik BBQ Center Ptuj — odgovarjam samodejno in nisem živa oseba.
-
-Pomagam z informacijami o žarih, BBQ opremi in aktualni ponudbi. Kako vam lahko pomagam?',
+    welcomeMessage: 'Pozdravljeni! Sem AI pomočnik BBQ Center Ptuj — odgovarjam samodejno in nisem živa oseba. Pomagam z informacijami o žarih, BBQ opremi in aktualni ponudbi. Kako vam lahko pomagam?',
     mobileBreakpoint: 768,
     autoOpenDelay: 3000,
     maxStoredMessages: 50
